@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- 
+  
+  GET REQUESTS
+
+  https://geo.ipify.org/api/v1?apiKey=at_RR3ooDDl10WnGMqNyLmM6gQHWwaAn&ipAddress=8.8.8.8
+
+ -->
+
+<!-- 
+   
+  API key
+
+  at_RR3ooDDl10WnGMqNyLmM6gQHWwaAn
+
+-->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +24,13 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <title>RhytoLeaf | IP Address Tracker</title>
 
-  <!-- Stylesheet -->
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- My Stylesheet -->
   <link rel="stylesheet" href="./static/styles/ip_tracker.css">
 </head>
 
@@ -18,49 +38,60 @@
 
   <h1 class="center-text">IP Address Tracker</h1>
 
-  <input class="center-text" type="text" placeholder="Search for any IP address or domain">
+  <input class="" type="text" placeholder="">
 
-  <!-- Flex container -->
+  <input class="form-control mr-sm-2" type="search" placeholder="Search for any IP address or domain"
+    aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> > </button>
+
+  <!-- TRACKER container -->
   <div class="flex-container">
 
     <!-- IP ADDRESS -->
     <div class="flex-item-left">
-      <h3>IP Address</h3>
+      <h6>IP ADDRESS</h6>
+      <h3>000.000.000.000</h3>
     </div>
 
     <!-- LOCATION -->
     <div class="flex-item-right">
-      <h3>Location</h3>
+      <h6>LOCATION</h6>
+      <h3>place</h3>
     </div>
 
     <!-- TIMEZONE -->
     <div class="flex-item-left">
-      <h3>Timezone</h3>
-      <h3>UTC</h3>
+      <h6>TIMEZONE</h6>
+      <h3>UTC +0:00</h3>
     </div>
 
     <!-- INTERNET SERVICE PROVIDER -->
     <div class="flex-item-right">
       <!-- add offset value dynamically using the API -->
-      <h3>ISP</h3>
+      <h6>ISP</h6>
+      <h3>provider</h3>
     </div>
   </div>
 
-
+  <!-- MAP -->
   <div>
-
-
-
-
-
+    MAP
   </div>
 
 
-
+  <!-- Footer -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">&copy; RhytoLeaf</a>.
   </div>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
