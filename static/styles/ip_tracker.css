@@ -48,3 +48,6 @@
         flex-direction: column;
     }
 }
+
+/* Map styling */
+#mapid { height: 180px; }
